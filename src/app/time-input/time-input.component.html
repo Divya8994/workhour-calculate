@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        <tr>
+            <td>Clock In</td>
+            <td>Lunch Out</td>
+            <td>Lunch In</td>
+            <td>Clock Out</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input [(ngModel)]="_timeIn" name="clockIn" type="time" /></td>
+            <td><input [(ngModel)]="_lunchOut" name="lunchOut" type="time" /></td>
+            <td><input [(ngModel)]="_lunchIn" name="lunchIn" type="time" /></td>
+            <td><input [(ngModel)]="_timeOut" name="clockOut" type="time" /></td>
+        </tr>
+    </tbody>
+</table>
+
+<h1 *ngIf="goodPair()"> You have entered a good pair of inputs</h1>
+<div>
+    <p>The time in value is: {{_timeIn}}</p>
+    <p>The time in value is: {{_lunchOut}}</p>
+    <p>The time in value is: {{_lunchIn}}</p>
+    <p>The time in value is: {{_timeOut}}</p>
+</div>

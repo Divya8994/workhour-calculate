@@ -1,0 +1,5 @@
+<label>Enter your hourly Pay:</label>
+<input [(ngModel)]= "_totalHours" name="hourlyPay" type="text"/>
+<input [(ngModel)]= "_payRate" name="payRate" type="text"/>
+
+<p>Your have earned approximately <span class="important"> ${{ calcGrossSalary() | number: '1.0-2'}} </span> today</p>
